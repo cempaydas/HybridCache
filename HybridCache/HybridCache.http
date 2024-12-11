@@ -1,0 +1,6 @@
+@HybridCache_HostAddress = http://localhost:5056
+
+GET {{HybridCache_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
