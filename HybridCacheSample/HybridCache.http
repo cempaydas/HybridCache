@@ -1,0 +1,33 @@
+@HybridCache_HostAddress = http://localhost:5056
+
+### Tüm ürünleri getir
+GET {{HybridCache_HostAddress}}/api/Product
+Accept: application/json
+
+### Tek ürün getir
+GET {{HybridCache_HostAddress}}/api/Product/1
+Accept: application/json
+
+### Yeni ürün ekle
+POST {{HybridCache_HostAddress}}/api/Product
+Content-Type: application/json
+
+{
+  "name": "Test Ürün",
+  "price": 99.99,
+  "description": "Test ürün açıklaması"
+}
+
+### Ürün güncelle
+PUT {{HybridCache_HostAddress}}/api/Product/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Güncellenmiş Ürün",
+  "price": 149.99,
+  "description": "Güncellenmiş açıklama"
+}
+
+### Ürün sil
+DELETE {{HybridCache_HostAddress}}/api/Product/1

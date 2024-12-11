@@ -1,6 +1,6 @@
 using System;
 
-namespace HybridCache.Model;
+namespace HybridCacheSample.Model;
 
 public class Product
 {

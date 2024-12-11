@@ -1,8 +1,8 @@
 using System;
-using HybridCache.Model;
+using HybridCacheSample.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace HybridCache;
+namespace HybridCacheSample;
 
 public class AppDbContext: DbContext
 {
